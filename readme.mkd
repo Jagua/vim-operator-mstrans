@@ -1,0 +1,29 @@
+# vim-operator-mstrans
+
+*operator-mstrans* is a Vim plugin to provide an operator to echo text translated register content by Microsoft Translator.
+
+This plugin depends on [vim-operator-user](https://github.com/kana/vim-operator-user) and [vim-microsoft-translator](https://github.com/Jagua/vim-microsoft-translator).
+
+
+## Key mappings
+
+**`<Plug>(operator-mstrans-echo)`**
+: translate and echo text.
+
+
+## Example
+
+suppose the following key mapping.
+
+```vim
+map ;m  <Plug>(operator-mstrans-echo)
+```
+
+Typing `;miw` over a word, echo text translated the word.
+
+Typing `;mis` over a sentence, echo text translated the sentence.
+
+Typing `;mip` over a paragraph, echo text translated the paragraph.
+
+
+
